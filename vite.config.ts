@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/',                     // THIS LINE IS THE NUCLEAR FIX
+  build: {
+    outDir: 'dist'
+  }
 })
